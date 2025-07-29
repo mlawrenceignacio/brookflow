@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.reg-inputs {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.reg-inputs:focus {
+  outline: 0;
+}
+
+.reg-inputs::placeholder {
+  color: gray;
+  font-weight: 500;
+}
+
+.reset-pass {
+  background-color: rgb(216, 252, 208);
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: large;
+}
+
+.log-inputs {
+  background-color: rgb(219, 247, 219);
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 61, 0);
+}
+
+.log-inputs::placeholder {
+  color: rgb(85, 85, 85);
+}
+
+.log-inputs:focus {
+  outline: none;
+}
+
+/*SCROLLBARS*/
+.scrollar-hidden-sm {
+  overflow: auto;
+}
+
+@media (max-width: 767px) {
+  .scrollar-hidden-sm {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hidden-sm::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none; /* Firefox */
+}

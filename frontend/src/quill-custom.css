@@ -1,0 +1,93 @@
+.ql-editor img {
+  max-width: 250px !important;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+.ql-container {
+  border: none !important;
+}
+
+.ql-editor {
+  padding: 1rem !important;
+  font-family: "Inter", sans-serif;
+}
+
+.editor-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px rgb(191, 191, 191) solid;
+  overflow: hidden;
+  position: relative;
+}
+
+.editor-container .ql-toolbar {
+  background-color: #252f3e !important;
+  border: none;
+  border-radius: 12px 12px 0 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.editor-container .ql-toolbar .ql-picker,
+.editor-container .ql-toolbar .ql-picker-label,
+.editor-container .ql-toolbar .ql-picker-item,
+.editor-container .ql-toolbar button {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+.editor-container .ql-toolbar .ql-align .ql-picker-label,
+.editor-container .ql-toolbar .ql-color .ql-picker-label {
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+/* Icons inside toolbar buttons */
+.editor-container .ql-toolbar button svg,
+.editor-container .ql-toolbar button svg * {
+  fill: white !important;
+  stroke: white !important;
+  color: white !important;
+}
+
+/* Dropdowns (like font/color/align options) */
+.editor-container .ql-toolbar .ql-picker-options {
+  background-color: #2a2a2a !important;
+  border: 1px solid #555 !important;
+}
+
+/* Dropdown items */
+.editor-container .ql-toolbar .ql-picker-options .ql-picker-item {
+  color: white !important;
+}
+
+/* Text placeholder in dark mode */
+.dark .ql-editor.ql-blank::before {
+  color: white !important;
+  opacity: 0.5;
+}
+
+/* Actual user-typed text in dark mode */
+.dark .ql-editor {
+  color: white !important;
+}
+
+/* Scrollable editor area */
+.editor-container .ql-container {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+@media (max-width: 768px) {
+  .editor-container {
+    max-height: calc(100dvh - 280px);
+  }
+}
