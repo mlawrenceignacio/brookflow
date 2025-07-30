@@ -5,7 +5,7 @@ const TitleModal = ({ setShowTitleModal, setTitle, onSave, title }) => {
     <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-50">
       <form
         onSubmit={onSave}
-        className="dark:bg-gray-800 bg-green-900 flex flex-col gap-5 py-8 2xl:py-16 px-10 rounded-lg w-[90%] sm:w-[60%] lg:w-[55%] 2xl:w-[30%] shadow-lg items-center border border-black"
+        className="dark:bg-gray-800 bg-green-900 flex flex-col gap-5 py-8 2xl:py-16 px-10 rounded-lg w-[90%] sm:w-[60%] lg:w-[40%] 2xl:w-[30%] shadow-lg items-center border border-black"
       >
         <p className="text-center text-white text-xl font-mono">
           Enter your note's title:

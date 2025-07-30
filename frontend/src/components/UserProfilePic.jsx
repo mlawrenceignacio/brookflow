@@ -61,7 +61,7 @@ const UserProfilePic = () => {
             <img
               src={user.profilePic || "/defaultProfile.jpg"}
               alt="Profile Picture"
-              className="rounded-full object-cover h-[150px] xl:h-[250px] xl:w-[250px] 2xl:w-[150px] 2xl:h-[150px] w-[150px]"
+              className="rounded-full object-cover h-[150px] lg:h-[170px] lg:w-[170px] 2xl:w-[150px] 2xl:h-[150px] w-[150px]"
             />
             <div onClick={handleClick} className="cursor-pointer">
               <FaCamera

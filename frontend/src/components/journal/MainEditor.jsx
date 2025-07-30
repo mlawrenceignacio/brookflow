@@ -58,7 +58,7 @@ const MainEditor = ({
       </div>
 
       <div className="flex-1 sm:flex sm:items-center sm:justify-center">
-        <div className="h-full flex flex-col sm:w-[80%] 2xl:w-[100%]">
+        <div className="h-full flex flex-col sm:w-[80%] lg:w-[60%] 2xl:w-[100%]">
           <div className="flex-1 overflow-auto rounded-xl shadow-inner">
             <Editor
               content={content}

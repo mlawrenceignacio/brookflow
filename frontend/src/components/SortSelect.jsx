@@ -32,7 +32,7 @@ const SortSelect = ({ options, setShowSortSelect, showSortSelect }) => {
       />
       <Tooltip id="sort-notes-tooltip" />
       {showSortSelect && (
-        <div className="fixed dark:bg-gray-900 bg-black top-32 left-16 2xl:top-16 2xl:left-[470px] p-4 rounded-lg text-white border dark:border-white border-green-600 z-50">
+        <div className="fixed dark:bg-gray-900 bg-black top-32 left-16 lg:top-36 lg:left-20 2xl:top-16 2xl:left-[470px] p-4 rounded-lg text-white border dark:border-white border-green-600 z-50">
           <ul>
             {options.map((option) => (
               <li

@@ -28,7 +28,7 @@ const TimeDisplay = () => {
         </div>
       ) : (
         <div className="flex flex-col items-center gap-2 ">
-          <h2 className="text-2xl xl:text-6xl font-semibold">{time}</h2>
+          <h2 className="text-2xl xl:text-4xl font-semibold">{time}</h2>
           <p className="text-xl xl:text-2xl text-green-300">{date}</p>
         </div>
       )}

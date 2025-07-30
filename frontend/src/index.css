@@ -40,12 +40,12 @@
 }
 
 /*SCROLLBARS*/
-.scrollar-hidden-sm {
-  overflow: auto;
+.scrollbar-hidden-sm {
+  overflow-y: auto;
 }
 
 @media (max-width: 767px) {
-  .scrollar-hidden-sm {
+  .scrollbar-hidden-sm {
     scrollbar-width: none;
     -ms-overflow-style: none;
   }

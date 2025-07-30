@@ -56,7 +56,7 @@ const Login = () => {
           onSubmit={handleSubmit}
           className="w-full flex flex-col items-center "
         >
-          <h1 className="text-green-900 font-bold text-5xl lg:text-7xl xl:text-7xl mb-2 ">
+          <h1 className="text-green-900 font-bold text-5xl lg:text-7xl xl:text-6xl mb-2 ">
             Brook<span className="text-black">Flow</span>
           </h1>
 
@@ -72,14 +72,14 @@ const Login = () => {
             </p>
           )}
 
-          <div className="w-[90%] sm:w-[70%] lg:w-[60%] 2xl:w-[50%] flex flex-col gap-3 text-lg mt-5 sm:text-xl lg:text-2xl">
+          <div className="w-[90%] sm:w-[70%] lg:w-[60%] 2xl:w-[50%] flex flex-col gap-3 text-lg mt-5 sm:text-xl lg:text-xl">
             <input
               type="email"
               placeholder="Enter email"
               name="email"
               value={form.email}
               onChange={handleChange}
-              className="log-inputs lg:py-4"
+              className="log-inputs lg:py-2"
             />
             <input
               type="password"
@@ -87,12 +87,12 @@ const Login = () => {
               value={form.password}
               onChange={handleChange}
               placeholder="Enter password"
-              className="log-inputs lg:py-4"
+              className="log-inputs lg:py-2"
             />
           </div>
           <button
             type="submit"
-            className="bg-green-700 w-[90%] sm:w-[70%] lg:w-[60%] xl:w-[50%] py-3 text-lg sm:text-xl lg:text-2xl lg:py-4 text-white mt-5 rounded-md hover:bg-green-600"
+            className="bg-green-700 w-[90%] sm:w-[70%] lg:w-[60%] xl:w-[50%] py-3 text-lg sm:text-xl lg:py-4 text-white mt-5 rounded-md hover:bg-green-600"
           >
             Log In
           </button>
@@ -105,12 +105,10 @@ const Login = () => {
           </Link>
 
           <div className="mt-5 text-center">
-            <p className="mb-4 2xl:mb-6 sm:text-xl lg:text-2xl">
-              Don't have an account?
-            </p>
+            <p className="mb-4 2xl:mb-6 sm:text-xl ">Don't have an account?</p>
             <Link
               to="/register"
-              className="bg-black text-white py-2 px-7 text-lg sm:text-xl lg:text-2xl lg:py-3 rounded-md hover:bg-gray-800"
+              className="bg-black text-white py-2 px-7 text-lg sm:text-xl lg:py-3 rounded-md hover:bg-gray-800"
             >
               Sign Up
             </Link>
