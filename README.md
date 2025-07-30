@@ -14,7 +14,7 @@ Users can write, manage, and organize their thoughts with useful features and a 
 - Upload Images to Notes (with Cloudinary)
 - Rich Text Editor using React Quill
 - Upload Profile Picture
-- Sort Notes by Date
+- Sort Notes
 - Zustand for Global State Management
 - Cloudinary for Image Uploads
 
